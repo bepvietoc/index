@@ -11,11 +11,24 @@
     <style>
         body {
             font-family: "Times New Roman", Georgia, Serif;
+            background-color: #e6f9e6;
         }
 
         h1, h2, h3, h4, h5, h6 {
             font-family: "Playfair Display";
             letter-spacing: 5px;
+        }
+
+        .w3-card, .w3-container, .w3-bar, .w3-section, footer {
+            background-color: #f0fff0 !important;
+        }
+
+        .w3-button {
+            background-color: #b2d8b2 !important;
+        }
+
+        .w3-button:hover {
+            background-color: #99cc99 !important;
         }
     </style>
 </head>
@@ -90,13 +103,13 @@
             <p><input class="w3-input w3-padding-16" type="email" name="Email" placeholder="Your Email" required aria-label="Your Email"></p>
             <p><input class="w3-input w3-padding-16" type="text" name="Message" placeholder="Your Message" required aria-label="Your Message"></p>
             <input type="hidden" name="_captcha" value="false">
-            <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+            <p><button class="w3-button w3-section" type="submit">SEND MESSAGE</button></p>
         </form>
     </div>
 </div>
 
 <!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-32">
+<footer class="w3-center w3-padding-32">
     <p>&copy; 2025 Bếp Việt OC</p>
 </footer>
 
