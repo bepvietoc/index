@@ -1,348 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+    <head>
+        <title>W3.CSS Template</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            body {
+                font-family: "Times New Roman", Georgia, Serif;
+            }
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-family: "Playfair Display";
+                letter-spacing: 5px;
+            }
+        </style>
+    </head>
+<body>
 
-	<title>Snapshot HTML CSS Web Template</title>
-<!--
-Snapshot Template
-http://www.templatemo.com/tm-493-snapshot
-
-Zoom Slider
-https://vegas.jaysalvat.com/
-
-Caption Hover Effects
-http://tympanus.net/codrops/2013/06/18/caption-hover-effects/
--->
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/animate.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-  	<link rel="stylesheet" href="css/component.css">
-	
-    <link rel="stylesheet" href="css/owl.theme.css">
-	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/vegas.min.css">
-	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Google web font  -->
-	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
-	
-</head>
-<body id="top" data-spy="scroll" data-offset="50" data-target=".navbar-collapse">
-
-
-<!-- Preloader section -->
-
-<div class="preloader">
-     <div class="sk-spinner sk-spinner-pulse"></div>
-</div>
-
-
-<!-- Navigation section  -->
-
-  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-    <div class="container">
-
-      <div class="navbar-header">
-        <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon icon-bar"></span>
-          <span class="icon icon-bar"></span>
-          <span class="icon icon-bar"></span>
-        </button>
-        <a href="#top" class="navbar-brand smoothScroll">Snapshot</a>
-      </div>
-        <div class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#top" class="smoothScroll"><span>Home</span></a></li>
-            <li><a href="#about" class="smoothScroll"><span>About</span></a></li>
-            <li><a href="#gallery" class="smoothScroll"><span>Gallery</span></a></li>
-            <li><a href="#contact" class="smoothScroll"><span>Contact</span></a></li>
-          </ul>
-       </div>
-
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+            <a href="#home" class="w3-bar-item w3-button">Gourmet au Catering</a>
+            <!-- Right-sided navbar links. Hide them on small screens -->
+            <div class="w3-right w3-hide-small">
+                <a href="#about" class="w3-bar-item w3-button">About</a>
+                <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+                <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+            </div>
+        </div>
     </div>
-  </div>
 
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+        <img class="w3-image" src="https://www.w3schools.com/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+        <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+            <h1 class="w3-xxlarge">Le Catering</h1>
+        </div>
+    </header>
 
-<!-- Home section -->
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:1100px">
 
-<section id="home">
-  <div class="overlay"></div>
-  <div class="container">
-    <div class="row">
+        <!-- About Section -->
+        <div class="w3-row w3-padding-64" id="about">
+            <div class="w3-col m6 w3-padding-large w3-hide-small">
+                <img src="https://www.w3schools.com/w3images/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600"
+                    height="750">
+            </div>
 
-      <div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
-        <h1 class="wow fadeInUp" data-wow-delay="0.6s">Let's take a snapshot</h1>
-        <p class="wow fadeInUp" data-wow-delay="0.9s">Snapshot website template is available for free download. Anyone can modify and use it for any site. Please tell your friends about <a rel="nofollow" href="http://www.templatemo.com">templatemo</a>. Thank you.</p>
-        <a href="#about" class="smoothScroll btn btn-success btn-lg wow fadeInUp" data-wow-delay="1.2s">Learn more</a>
-      </div>
+            <div class="w3-col m6 w3-padding-large">
+                <h1 class="w3-center">About Catering</h1><br>
+                <h5 class="w3-center">Tradition since 1889</h5>
+                <p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur.We only use <span
+                        class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+                <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod
+                    temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
 
+        <hr>
+
+        <!-- Menu Section -->
+        <div class="w3-row w3-padding-64" id="menu">
+            <div class="w3-col l6 w3-padding-large">
+                <h1 class="w3-center">Our Menu</h1><br>
+                <h4>Bread Basket</h4>
+                <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+
+                <h4>Honey Almond Granola with Fruits</h4>
+                <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+
+                <h4>Belgian Waffle</h4>
+                <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+
+                <h4>Scrambled eggs</h4>
+                <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+
+                <h4>Blueberry Pancakes</h4>
+                <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+            </div>
+
+            <div class="w3-col l6 w3-padding-large">
+                <img src="https://www.w3schools.com/w3images/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Contact Section -->
+        <div class="w3-container w3-padding-64" id="contact">
+            <h1>Contact</h1><br>
+            <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater
+                the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact
+                us.</p>
+            <p class="w3-text-blue-grey w3-large"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
+            <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a
+                message here:</p>
+            <form action="/action_page.php" target="_blank">
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+                <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required
+                        name="People"></p>
+                <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required
+                        name="date" value="2020-11-16T20:00"></p>
+                <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements"
+                        required name="Message"></p>
+                <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+            </form>
+        </div>
+
+        <!-- End page content -->
     </div>
-  </div>
-</section>
 
-
-<!-- About section -->
-
-<section id="about">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-9 col-sm-8 wow fadeInUp" data-wow-delay="0.2s">
-        <div class="about-thumb">
-          <h1>Background</h1>
-          <p>Quisque tempor bibendum dolor at volutpat. Suspendisse venenatis quam sed libero euismod feugiat. In cursus nisi vitae lectus facilisis mollis. Nullam scelerisque, quam nec iaculis vulputate.</p>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-sm-4 wow fadeInUp about-img" data-wow-delay="0.6s">
-        <img src="images/about-img.jpg" class="img-responsive img-circle" alt="About">
-      </div>
-
-      <div class="clearfix"></div>
-
-      <div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
-        <div class="section-title text-center">
-          <h1>Snapshot Team</h1>
-          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-        </div>
-      </div>
-
-      <!-- team carousel -->
-      <div id="team-carousel" class="owl-carousel">
-
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
-        <div class="team-thumb">
-          <div class="image-holder">
-            <img src="images/team-img1.jpg" class="img-responsive img-circle" alt="Mary">
-          </div>
-          <h2 class="heading">Mary, CEO</h2>
-          <p class="description">Aliquam ac justo est. Praesent feugiat cursus est.</p>
-        </div>
-      </div>
-
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.6s">
-        <div class="team-thumb">
-          <div class="image-holder">
-            <img src="images/team-img2.jpg" class="img-responsive img-circle" alt="Jack">
-          </div>
-          <h2 class="heading">Jack, Founder</h2>
-          <p class="description">Maecenas sed diam eget risus varius blandit sit non.</p>
-        </div>
-      </div>
-
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-        <div class="team-thumb">
-          <div class="image-holder">
-            <img src="images/team-img3.jpg" class="img-responsive img-circle" alt="Linda">
-          </div>
-          <h2 class="heading">Linda, Manager</h2>
-          <p class="description">Phasellus nec ante in nunc molestie tincidunt ut eu diam.</p>
-        </div>
-      </div>
-
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-        <div class="team-thumb">
-          <div class="image-holder">
-            <img src="images/team-img4.jpg" class="img-responsive img-circle" alt="Sandy">
-          </div>
-          <h2 class="heading">Sandy, Director</h2>
-          <p class="description">Curabitur vulputate euismod neque et tincidunt.</p>
-        </div>
-      </div>
-
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-        <div class="team-thumb">
-          <div class="image-holder">
-            <img src="images/team-img5.jpg" class="img-responsive img-circle" alt="Lukia">
-          </div>
-          <h2 class="heading">Lukia, Fashion</h2>
-          <p class="description">Maecenas sed diam eget risus varius blandit sit.</p>
-        </div>
-      </div>
-
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-        <div class="team-thumb">
-          <div class="image-holder">
-            <img src="images/team-img6.jpg" class="img-responsive img-circle" alt="George">
-          </div>
-          <h2 class="heading">George, Admin</h2>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-        </div>
-      </div>
-
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-        <div class="team-thumb">
-          <div class="image-holder">
-            <img src="images/team-img7.jpg" class="img-responsive img-circle" alt="Day">
-          </div>
-          <h2 class="heading">Day, Accountant</h2>
-          <p class="description">Maecenas sed diam eget risus varius blandit sit.</p>
-        </div>
-      </div>
-
-      <div class="item col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.8s">
-        <div class="team-thumb">
-          <div class="image-holder">
-            <img src="images/team-img8.jpg" class="img-responsive img-circle" alt="Lynn">
-          </div>
-          <h2 class="heading">Lynn, Marketing</h2>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
-        </div>
-      </div>
-
-      </div>
-      <!-- end team carousel -->
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Gallery section -->
-
-<section id="gallery">
-  <div class="container">
-    <div class="row">
-
-      <div class="col-md-offset-2 col-md-8 col-sm-12 wow fadeInUp" data-wow-delay="0.3s">
-        <div class="section-title">
-          <h1>Gallery</h1>
-          <p>Nullam scelerisque, quam nec iaculis vulputate, arcu ligula sollicitudin nisl, ac volutpat erat nulla a arcu.</p>
-        </div>
-      </div>
-
-      <ul class="grid cs-style-4">
-        <li class="col-md-6 col-sm-6">
-          <figure>
-            <div><img src="images/gallery-img1.jpg" alt="image 1"></div>
-            <figcaption>
-              <h1>Sapien arcu</h1>
-              <small>Cum sociis natoque penatibus et magnis dis parturient montes.</small>
-              <a href="#">Read More</a>
-            </figcaption>
-          </figure>
-        </li>
-
-        <li class="col-md-6 col-sm-6">
-          <figure>
-            <div><img src="images/gallery-img2.jpg" alt="image 2"></div>
-            <figcaption>
-              <h1>Aliquam erat</h1>
-              <small>Suspendisse venenatis quam sed libero euismod feugiat.</small>
-              <a href="#">Details</a>
-            </figcaption>
-          </figure>
-        </li>
-
-        <li class="col-md-6 col-sm-6">
-          <figure>
-            <div><img src="images/gallery-img3.jpg" alt="image 3"></div>
-            <figcaption>
-              <h1>Cras ante sem</h1>
-              <small>Aenean urna massa, convallis vehicula velit et, dictum pellentesque nisi.</small>
-              <a href="#">Learn More</a>
-            </figcaption>
-          </figure>
-        </li>
-
-        <li class="col-md-6 col-sm-6">
-          <figure>
-            <div><img src="images/gallery-img4.jpg" alt="image 4"></div>
-            <figcaption>
-              <h1>Sed ornare</h1>
-              <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</small>
-              <a href="#">Full Post</a>
-            </figcaption>
-          </figure>
-        </li>
-      </ul>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Contact section -->
-
-<section id="contact">
-  <div class="container">
-    <div class="row">
-
-       <div class="col-md-offset-1 col-md-10 col-sm-12">
-
-        <div class="col-lg-offset-1 col-lg-10 section-title wow fadeInUp" data-wow-delay="0.4s">
-          <h1>Send a message</h1>
-          <p>Nunc suscipit ante in lectus laoreet, nec pharetra diam dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-        </div>
-
-        <form action="#" method="post" class="wow fadeInUp" data-wow-delay="0.8s">
-          <div class="col-md-6 col-sm-6">
-            <input name="name" type="text" class="form-control" id="name" placeholder="Name">
-          </div>
-          <div class="col-md-6 col-sm-6">
-            <input name="email" type="email" class="form-control" id="email" placeholder="Email">
-          </div>
-          <div class="col-md-12 col-sm-12">
-            <textarea name="message" rows="6" class="form-control" id="message" placeholder="Message"></textarea>
-          </div>
-          <div class="col-md-offset-3 col-md-6 col-sm-offset-3 col-sm-6">
-            <input type="submit" class="form-control" value="SEND MESSAGE">
-          </div>
-        </form>
-
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- Footer section -->
-
-<footer>
-	<div class="container">
-    
-		<div class="row">
-
-			<div class="col-md-12 col-sm-12">
-            
-                <ul class="social-icon"> 
-                    <li><a href="#" class="fa fa-facebook wow fadeInUp" data-wow-delay="0.2s"></a></li>
-                    <li><a href="#" class="fa fa-twitter wow fadeInUp" data-wow-delay="0.4s"></a></li>
-                    <li><a href="#" class="fa fa-linkedin wow fadeInUp" data-wow-delay="0.6s"></a></li>
-                    <li><a href="#" class="fa fa-instagram wow fadeInUp" data-wow-delay="0.8s"></a></li>
-                    <li><a href="#" class="fa fa-google-plus wow fadeInUp" data-wow-delay="1.0s"></a></li>
-                </ul>
-
-				<p class="wow fadeInUp"  data-wow-delay="1s" >Copyright &copy; 2016 Snapshot Studio | 
-                Design: <a href="https://plus.google.com/+templatemo" title="free css templates" target="_blank">Templatemo</a></p>
-                
-			</div>
-			
-		</div>
-        
-	</div>
-</footer>
-
-<!-- Back top -->
-<a href="#" class="go-top"><i class="fa fa-angle-up"></i></a>
-
-<!-- Javascript  -->
-<script src="js/jquery.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/vegas.min.js"></script>
-<script src="js/modernizr.custom.js"></script>
-<script src="js/toucheffects.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/smoothscroll.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/custom.js"></script>
+     <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+    <footer class="w3-center w3-light-grey w3-padding-32">
+    <p>This website was made with W3schools Spaces. Make your own free website today!</p>
+    <a class="w3-button w3-round-xxlarge w3-dark-grey w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Start now</a>
+    <!-- Footer end. -->
+    </footer>
 
 </body>
+
 </html>
