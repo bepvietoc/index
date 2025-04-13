@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bếp Việt OC - Authentic homemade Vietnamese bánh chưng and bánh tét in Garden Grove, CA.">
+    <meta name="keywords" content="Vietnamese food, bánh chưng, bánh tét, Garden Grove, homemade, Bếp Việt OC">
+    <title>Bếp Việt OC</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+            font-family: "Times New Roman", Georgia, Serif;
+            background-color: #e6f9e6;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Playfair Display";
+            letter-spacing: 5px;
+        }
+
+        .w3-card, .w3-container, .w3-bar, .w3-section, footer {
+            background-color: #f0fff0 !important;
+        }
+
+        .w3-button {
+            background-color: #b2d8b2 !important;
+        }
+
+        .w3-button:hover {
+            background-color: #99cc99 !important;
+        }
+
+        .contact-text {
+            font-size: 18px;
+            color: #2f4f4f;
+            margin: 5px 0;
+        }
+
+        .about-text, .menu-text {
+            font-size: 18px;
+            color: #2f4f4f;
+        }
+
+        #chatbot-wrapper {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            z-index: 9999;
+        }
+
+        #toggle-chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #b2d8b2;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+            cursor: pointer;
+            z-index: 10000;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+        <a href="#home" class="w3-bar-item w3-button">Bếp Việt OC</a>
+        <div class="w3-right w3-hide-small">
+            <a href="#about" class="w3-bar-item w3-button">About</a>
+            <a href="#menu" class="w3-bar-item w3-button">Menu</a>
+            <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        </div>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+    <img class="w3-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/BanhChungBanhTay.jpg/1024px-BanhChungBanhTay.jpg" alt="Bánh Chưng Bánh Tét on plate" width="1600" height="800">
+    <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+        <h1 class="w3-xxlarge">Bếp Việt OC</h1>
+    </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+    <!-- About Section -->
+    <div class="w3-row w3-padding-64" id="about">
+        <div class="w3-col m6 w3-padding-large">
+            <img src="bg_banh_chung.jpg" alt="Traditional Vietnamese banana leaf wrapped cakes" class="w3-image" style="width:100%; border-radius:8px;">
+        </div>
+
+        <div class="w3-col m6 w3-padding-large">
+            <h1 class="w3-center">About Us</h1><br>
+            <p class="about-text">Welcome to Bếp Việt OC! We are a small family-run kitchen located in Garden Grove, California, offering authentic Vietnamese holiday staples: <strong>Bánh Tét</strong> and <strong>Bánh Chưng</strong>. Our dishes are handmade with love and tradition, using fresh ingredients wrapped in fragrant banana leaves — perfect for sharing or gifting.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Menu Section -->
+    <div class="w3-row w3-padding-64" id="menu">
+        <div class="w3-col l6 w3-padding-large">
+            <h1 class="w3-center">Our Menu</h1><br>
+            <h4 class="menu-text">Bánh Chưng</h4>
+            <p class="menu-text">$5 / cái size 1lb</p><br>
+
+            <h4 class="menu-text">Bánh Tét</h4>
+            <p class="menu-text">$5 / cái size 1lb</p><br>
+        </div>
+
+        <div class="w3-col l6 w3-padding-large">
+            <img src="banh chung.jpg" alt="Bánh Chưng ingredients and finished products" class="w3-image" style="width:100%; border-radius:8px;">
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-padding-64" id="contact">
+        <h1>Contact</h1><br>
+        <p class="contact-text">Located in Garden Grove, CA — we proudly serve the local Vietnamese-American community and beyond. Reach out to place an order or ask a question!</p>
+        <p class="contact-text"><b>Address:</b> Garden Grove, CA, United States</p>
+        <p class="contact-text"><b>Phone:</b> +1 657-250-6301</p>
+        <p class="contact-text"><b>Email:</b> <a href="mailto:bepvietoc@gmail.com">bepvietoc@gmail.com</a></p>
+        <p class="contact-text"><b>Website:</b> <a href="https://bepvietoc.github.io" target="_blank">https://bepvietoc.github.io</a></p>
+
+        <form action="https://formsubmit.co/bepvietoc@gmail.com" method="POST">
+            <p><input class="w3-input w3-padding-16" type="text" name="Name" placeholder="Your Name" required aria-label="Your Name"></p>
+            <p><input class="w3-input w3-padding-16" type="email" name="Email" placeholder="Your Email" required aria-label="Your Email"></p>
+            <p><input class="w3-input w3-padding-16" type="text" name="Message" placeholder="Your Message" required aria-label="Your Message"></p>
+            <input type="hidden" name="_captcha" value="false">
+            <p><button class="w3-button w3-section" type="submit">SEND MESSAGE</button></p>
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-padding-32">
+    <p>&copy; 2025 Bếp Việt OC</p>
+<div style="margin-top: 16px;">
+        <a href="https://www.facebook.com/bepvietoc/" target="_blank" style="margin: 0 8px; text-decoration: none;">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook" style="width: 24px; height: 24px; vertical-align: middle;">
+        </a>
+        <a href="https://youtu.be/h3tIPnKnKz8" target="_blank" style="margin: 0 8px; text-decoration: none;">
+            <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube" style="width: 24px; height: 24px; vertical-align: middle;">
+        </a>
+    </div>
+
+<!-- AI Chatbot Wrapper -->
+<div id="chatbot-wrapper">
+    <iframe 
+      src="https://copilotstudio.microsoft.com/environments/Default-3d8dced9-78ec-442a-8d96-b7ffe68b9c38/bots/Default_messengerAssistant/webchat?__version__=2" 
+      style="width: 350px; height: 500px; border: none; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+    </iframe>
+</div>
+<button id="toggle-chatbot" onclick="toggleChatbot()">Ẩn/ Hiện AI Chat</button>
+
+<script>
+function toggleChatbot() {
+    const chatbot = document.getElementById('chatbot-wrapper');
+    chatbot.style.display = chatbot.style.display === 'none' ? 'block' : 'none';
+}
+</script>
+
+</body>
+</html>
