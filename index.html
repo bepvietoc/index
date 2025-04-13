@@ -41,6 +41,26 @@
             font-size: 18px;
             color: #2f4f4f;
         }
+
+        #chatbot-wrapper {
+            position: fixed;
+            bottom: 80px;
+            right: 20px;
+            z-index: 9999;
+        }
+
+        #toggle-chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #b2d8b2;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+            cursor: pointer;
+            z-index: 10000;
+        }
     </style>
 </head>
 <body>
@@ -124,11 +144,21 @@
     <p>&copy; 2025 Bếp Việt OC</p>
 </footer>
 
-<!-- AI Chatbot -->
-<iframe 
-  src="https://copilotstudio.microsoft.com/environments/Default-3d8dced9-78ec-442a-8d96-b7ffe68b9c38/bots/Default_messengerAssistant/webchat?__version__=2" 
-  style="position: fixed; bottom: 20px; right: 20px; width: 350px; height: 500px; border: none; z-index: 9999; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
-</iframe>
+<!-- AI Chatbot Wrapper -->
+<div id="chatbot-wrapper">
+    <iframe 
+      src="https://copilotstudio.microsoft.com/environments/Default-3d8dced9-78ec-442a-8d96-b7ffe68b9c38/bots/Default_messengerAssistant/webchat?__version__=2" 
+      style="width: 350px; height: 500px; border: none; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
+    </iframe>
+</div>
+<button id="toggle-chatbot" onclick="toggleChatbot()">Chat</button>
+
+<script>
+function toggleChatbot() {
+    const chatbot = document.getElementById('chatbot-wrapper');
+    chatbot.style.display = chatbot.style.display === 'none' ? 'block' : 'none';
+}
+</script>
 
 </body>
 </html>
