@@ -61,7 +61,17 @@
             cursor: pointer;
             z-index: 10000;
         }
-    </style>
+    
+@keyframes pulse {
+    0% { transform: translateY(0); opacity: 1; }
+    50% { transform: translateY(-4px); opacity: 0.85; }
+    100% { transform: translateY(0); opacity: 1; }
+}
+.order-animate {
+    animation: pulse 2s infinite;
+}
+
+</style>
 </head>
 <body>
 
@@ -116,9 +126,25 @@
             <h4 class="menu-text">Bánh Chưng</h4>
             <p class="menu-text">$5 / cái size 1lb</p><br>
 
+
+
+
+
             <h4 class="menu-text">Bánh Tét</h4>
             <p class="menu-text">$5 / cái size 1lb</p><br>
+<p style="text-align: center;">
+    <a href="#contact" class="w3-button w3-round-large w3-large order-animate" style="margin-top:32px; color: #2f4f4f;">
+        🛒 Đặt Hàng Ngay
+    </a>
+</p>
+
+
+
+
+
         </div>
+
+
 
         <div class="w3-col l6 w3-padding-large">
             <img src="banh chung.jpg" alt="Bánh Chưng ingredients and finished products" class="w3-image" style="width:100%; border-radius:8px;">
@@ -165,7 +191,7 @@
       style="width: 350px; height: 500px; border: none; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.3);">
     </iframe>
 </div>
-<button id="toggle-chatbot" onclick="toggleChatbot()">Ẩn/ Hiện AI Chat</button>
+<button id="toggle-chatbot" class="order-animate" onclick="toggleChatbot()">Ẩn/ Hiện AI Chat</button>
 
 <script>
 function toggleChatbot() {
